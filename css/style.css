@@ -1,0 +1,418 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.mainBody{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+}
+.errorBody{
+    width: 100%;
+    height: 100%;
+}
+.imageHeader{
+    width: 100%;
+    height: 40%;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.imageHeader img{
+    width: 100%;
+    height: 100%;
+}
+.errorHeader{
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 26px;
+}
+.errorText{
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+}
+
+.countdownTimer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    align-items: start;
+}
+.dot{
+    font-size: 40px;
+}
+.countdownTimer div span{
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+}
+.countdownTimer div p{
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-size: 15px;
+    margin: 0;
+}
+.welcomeBody{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+}
+.welcomeBody h3 , p{
+    margin: 0;
+}
+.welcomeBody h3 {
+    margin-top: 20px;
+}
+.welcomeBody p{
+    margin-top: 15px;
+}
+.welcomeImage{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25%;
+    font-size: 100px;
+    width: 100px;
+    height: 100px;
+}
+.welcomeHeader{
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 26px;
+}
+.welcomeText{
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-size: 17px;
+    text-align: center;
+}
+.slideContainer{
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.slider{
+    width: 90vw;
+    height: 15px;
+    position: absolute;
+    -webkit-appearance: none;
+    background-color: #fd7897;
+    border-radius: 5px;
+    outline: none;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.slider::-webkit-slider-thumb:hover{
+    box-shadow: 0 0 0 3px #fd7897,
+                0 0 0 6px white;
+}
+.fa-solid{
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(transparent 100px , #fd7897 100px);
+    -webkit-text-stroke: 4px #fd7897;
+    background-size: 200px 200px;
+    -webkit-background-clip:text;
+}
+.successBody{
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: 1s ease-in;
+}
+.successImage{
+    width: 50%;
+    height: 25%;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+.successImage img{
+    width: 100%;
+    height: 100%;
+}
+.successHeader{
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 26px;
+}
+.successBody button{
+    width: 100px;
+    height: 35px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #fd7897;
+    outline: none;
+    border: 1px solid #fd7897;
+    border-radius: 10px;
+    outline: #b5576d;
+}
+.successBody button a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 14px;
+}
+.bigScreen{
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+@media screen and (max-width: 449px){
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .mainBody{
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        border: 1px solid red;
+    }
+    .errorBody{
+        width: 100%;
+        height: 100%;
+    }
+    .imageHeader{
+        width: 100%;
+        height: 40%;
+        object-fit: contain;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .imageHeader img{
+        width: 100%;
+        height: 100%;
+    }
+    .errorHeader{
+        font-family: "Yantramanav", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        color: #000;
+        font-size: 26px;
+    }
+    .errorText{
+        font-family: "Yantramanav", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #000;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .countdownTimer{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 25px;
+        align-items: start;
+    }
+    .dot{
+        font-size: 40px;
+    }
+    .countdownTimer div span{
+        font-family: "Yantramanav", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        color: #000;
+        font-size: 40px;
+    }
+    .countdownTimer div p{
+        font-family: "Yantramanav", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #000;
+        font-size: 15px;
+        margin: 0;
+    }
+    .welcomeBody{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: none;
+    }
+    .welcomeBody h3 , p{
+        margin: 0;
+    }
+    .welcomeBody h3 {
+        margin-top: 20px;
+    }
+    .welcomeBody p{
+        margin-top: 15px;
+    }
+    .welcomeImage{
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 25%;
+        font-size: 100px;
+        width: 100px;
+        height: 100px;
+    }
+    .welcomeHeader{
+        font-family: "Yantramanav", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        color: #000;
+        font-size: 26px;
+    }
+    .welcomeText{
+        font-family: "Yantramanav", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #000;
+        font-size: 17px;
+        text-align: center;
+    }
+    .slideContainer{
+        height: 15px;
+        width: 100%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .slider{
+        width: 90vw;
+        height: 15px;
+        position: absolute;
+        -webkit-appearance: none;
+        background-color: #fd7897;
+        border-radius: 5px;
+        outline: none;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .slider::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        outline: none;
+        cursor: pointer;
+    }
+    .slider::-webkit-slider-thumb:hover{
+        box-shadow: 0 0 0 3px #fd7897,
+                    0 0 0 6px white;
+    }
+    .fa-solid{
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(transparent 100px , #fd7897 100px);
+        -webkit-text-stroke: 4px #fd7897;
+        background-size: 200px 200px;
+        -webkit-background-clip:text;
+    }
+    .successBody{
+        width: 100%;
+        height: 100%;
+        display: none;
+        transition: 1s ease-in;
+    }
+    .successImage{
+        width: 50%;
+        height: 25%;
+        object-fit: contain;
+        margin: 0 auto;
+        margin-top: 20%;
+    }
+    .successImage img{
+        width: 100%;
+        height: 100%;
+    }
+    .successHeader{
+        font-family: "Yantramanav", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        color: #000;
+        font-size: 26px;
+    }
+    .successBody button{
+        width: 100px;
+        height: 35px;
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background: #fd7897;
+        outline: none;
+        border: 1px solid #fd7897;
+        border-radius: 10px;
+        outline: #b5576d;
+    }
+    .successBody button a{
+        text-decoration: none;
+        color: #fff;
+        font-family: "Yantramanav", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        font-size: 14px;
+    }
+    .bigScreen{
+        width: 100%;
+        height: 100vh;
+        display: none;
+    }
+}
+@media screen and (min-width:450px){
+    .mainBody{
+        display: none;
+    }
+    .bigScreen{
+        display: block;
+    }
+}

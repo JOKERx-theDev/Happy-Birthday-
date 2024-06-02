@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>HAPPY BIRTHDAY</title>
+</head>
+<body>
+    <div class="mainBody">
+        <div class="mainHeader">
+            <h1>
+                This Is For <br> You
+            </h1>
+
+            <p>Simple Things That You Might Remember Later.</p>
+        </div>
+        <div class="video">
+            <video src="images/Untitled design.mp4" autoplay muted playsinline></video>
+        </div>
+
+        <!--SUPRISE FOR YOU-->
+        <div class="suprise">
+            <h3>Suprise for you</h3>
+            <div class="supriseCat">
+                <a href="about.html">
+                    <div class="aboutYou">
+                        <div class="icon"><i class="fa-thin fa-person-dress"></i></div>
+                        <p>About You</p>
+                    </div>
+                </a>
+                <a href="message.html">
+                    <div class="supriseMessage">
+                        <div class="icon"><i class="fa-solid fa-message"></i></div>
+                        <p>Message for you</p>
+                    </div>
+                </a>
+            </div>
+
+            <!--THROW BACK FRAME-->
+            <div class="TBF">
+                <img src="images/IMG_2008.JPG" alt="Image">
+            </div>
+
+            <!--THROW BACK BUTTON-->
+            <div class="tbb">
+                <a href="throwback.html">
+                    <button>Throwback Pictures</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bigScreen">
+        REDUCE SCREEN
+    </div>
+    <script>
+        document.getElementsByTagName('video')[0].onended = function () {
+        this.load();
+        this.play();
+    };
+    </script>
+</body>
+</html>
